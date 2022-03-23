@@ -29,7 +29,7 @@ Note: To run the test continously ```mix test.watch``` is also available. This w
 ## Models 
 The model portion of the API consist of three tables. These are Users, Games, and Bets respectively. Each user, game, or bet, have a unique ID and referenced by the ID respectively. The schema of the tables and their respective fields are represented below.
 
-![Model Schema] (model_schema.jpg)
+![](model_schema.jpg)
 
 ## Contributors
 
