@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gameId: MyString
+  teamOne: MyString
+  teamTwo: MyString
+  gameSpread: 1.5
+  status: false
+  scoreDiff: 1
+
+two:
+  gameId: MyString
+  teamOne: MyString
+  teamTwo: MyString
+  gameSpread: 1.5
+  status: false
+  scoreDiff: 1
