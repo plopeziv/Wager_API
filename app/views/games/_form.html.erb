@@ -1,0 +1,53 @@
+<%= form_with model: game do |form| %>
+    <div>
+        <%= form.label :gameId, "Game ID" %> <br>
+        <%= form.text_field :gameId %>
+        <% game.errors.full_messages_for(:gameId).each do |message| %>
+            <div> <%= message %> </div>
+        <% end %>
+    </div>
+
+    <div>
+        <%= form.label :teamOne, "Team 1" %> <br>
+        <%= form.text_field :teamOne %>
+        <% game.errors.full_messages_for(:teamOne).each do |message| %>
+            <div> <%= message %> </div>
+        <% end %>
+    </div>
+
+    <div>
+        <%= form.label :teamTwo, "Team 2" %> <br>
+        <%= form.text_field :teamTwo %>
+        <% game.errors.full_messages_for(:teamTwo).each do |message| %>
+            <div> <%= message %> </div>
+        <% end %>
+    </div>
+
+    <div>
+        <%= form.label :gameSpread, "Game Spread (+/-)" %> <br>
+        <%= form.text_field :gameSpread %>
+        <% game.errors.full_messages_for(:gameSpread).each do |message| %>
+            <div> <%= message %> </div>
+        <% end %>
+    </div>
+
+    <div>
+        <%= form.label :status, "Is Game Completed?" %> <br>
+        <%= form.text_field :status %>
+        <% game.errors.full_messages_for(:status).each do |message| %>
+            <div> <%= message %> </div>
+        <% end %>
+    </div>
+
+    <div>
+        <%= form.label :scoreDiff, "Resulting Score Differential (+/-)" %> <br>
+        <%= form.text_field :scoreDiff %>
+        <% game.errors.full_messages_for(:scoreDiff).each do |message| %>
+            <div> <%= message %> </div>
+        <% end %>
+    </div>
+
+    <div>
+        <%= form.submit%>
+    </div>
+<% end %>

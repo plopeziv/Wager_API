@@ -6,3 +6,7 @@
     <li>Completion Status: <%= @game.status%> </li>
     <li>Line Result: <%= @game.scoreDiff%> </li>
 </ul>
+
+<ul>
+    <li><%= link_to "Edit", edit_game_path(@game) %></li>
+</ul>
