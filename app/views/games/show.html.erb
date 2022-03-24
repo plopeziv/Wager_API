@@ -9,4 +9,8 @@
 
 <ul>
     <li><%= link_to "Edit", edit_game_path(@game) %></li>
+    <li><%= link_to "Destroy", game_path(@game), data: {
+        turbo_method: :delete,
+        turbo_confirm: "Ar you sure?"
+    } %></li>
 </ul>
